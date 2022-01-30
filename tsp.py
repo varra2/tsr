@@ -18,7 +18,7 @@ for i in range(lendots):
         distances[i,j] = distance(dots[i],dots[j])
 
 # Начальное значение "оптимального пути" задаётся таким, что любое расстояние из возможных его не превысит
-optway = np.amax(distances)*5
+optway = np.amax(distances)*lendots
 
 #Номера пунктов, доступных для выбора первой (не нулевой) точки маршрута заносятся в сет
 choice1 = set(range(1,lendots))
